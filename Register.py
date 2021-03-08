@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 
-# here we working with Tkinter
+
 root = Tk()
 root.geometry('300x200')
 root.title('Social Media')
@@ -11,7 +11,6 @@ root['bg'] = '#282828'
 
 """ Check function """
 
-# check Function
 def check(event):
     Login = login.get()
     Password = password.get()
@@ -26,7 +25,6 @@ def check(event):
         messagebox.showerror('Critical Error 000x571', 'Введите логин и пароля для авторизации')
 
 
-""" Главная часть """
 text_login = Label(text='Login',
                    font='Roboto 15',
                    fg='#FF9C09',
@@ -39,7 +37,7 @@ login = Entry(root, font='Consolas 15',
               justify='center')
 
 text_password = Label(text='Password',
-                      font='Roboto 15',  # Label - это текст, а Entry - это функция input()
+                      font='Roboto 15',  
                       fg='#FF9C09',
                       pady='2',
                       bg='#282828')
